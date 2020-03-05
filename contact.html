@@ -28,19 +28,37 @@
    <h3>Contact us ...</h3>
 
 <form action="mailto:se.eden.mesfin@gmail.com" enctype="utf-8" method="POST">
-   <label for="fName">First Name:</label> <input type="text" name="fName" id="fName"><br>
-   <label for="sName">s.Name</label><input type="text" name="sName" id="sName"><br>
-   <label for="eMail">Email</label><input type="email" name="eMail" id="eMail"><br>
-   Where are you from?
-   <select name="country" id="">
+   <table>
+    <tr>
+       <td><label for="fName">First Name:</label></td>
+        <td> <input type="text" name="fName" id="fName"></td>
+    </tr>
+    <tr>
+  <td><label for="sName">s.Name</label></td> 
+  <td><input type="text" name="sName" id="sName"></td>
+    </tr>
+    <tr>
+   <td><label for="eMail">Email</label></td>
+   <td><input type="email" name="eMail" id="eMail"></td>
+    </tr>
+    <tr><td> Where are you from?</td>
+   <td><select name="country" id="">
        <option value="af"> Africa</option>
        <option value="as" >Asia</option>
        <option value="eu"> Europe</option>
-   </select><br>
+   </select></td>
+</tr>
+<tr>
+  <td> what do you want to say?</td>
+  </tr>
+  <tr>
+  <td> <textarea name="" id="txarea" cols="30" rows="10" name="txarea"></textarea></td>
+  </tr>
+  <tr>
+   <td><input type="submit" value="submit"></td>
+</tr>
 
-   what do you want to say?<br><br>
-   <textarea name="" id="txarea" cols="30" rows="10" name="txarea"></textarea><br>
-   <input type="submit" value="submit">
+</table>
 </form>
 
 
