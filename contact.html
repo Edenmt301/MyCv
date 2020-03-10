@@ -9,8 +9,9 @@
 
 <hr>
 <a href="index.html">Home</a> |
-<a href="contact.html">Contact</a>
+<a href="contact.html">Contact</a>|
 <a href="Gallery.html" target="_blank">Gallery</a>
+
 <hr>
 
 
@@ -23,8 +24,16 @@
                 <h3>Student, Addis Ababa University</h3>
                 <p>My name is Eden, I am a <strong> software engineering student</strong> at addis ababa University </p></td>
         </tr>
+        <hr>
     </table>
-    
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <a href="https://www.embedgooglemap.org"></a>
+        </div>
+        <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+    </div>
     <hr>
    <h3>Contact us ...</h3>
 
@@ -32,20 +41,29 @@
    <table>
     <tr>
        <td><label for="fName">First Name:</label></td>
-        <td> <input type="text" name="fName" id="fName"></td>
+        <td> <input type="text" name="fName" id="fName" pattern="[A-Za-z]{2,20}" title="letters only"></td>
     </tr>
     <tr>
-  <td><label for="sName">s.Name</label></td> 
-  <td><input type="text" name="sName" id="sName"></td>
+  <td><label for="sName">Last Name</label></td> 
+  <td><input type="text" name="sName" id="sName" pattern="[A-Za-z]{2,20}" title="letters only"></td>
     </tr>
     <tr>
    <td><label for="eMail">Email</label></td>
    <td><input type="email" name="eMail" id="eMail"></td>
     </tr>
+<tr>
+    <td><label for="pw">Password</label></td>
+    <td><input type="password" name="pw" id="pw" pattern=".{6,}" title="Six or more characters"></td></tr>
     <tr>
         <td><label for="tel">Phone number</label></td>
         <td><input type="tel" id="tel" name="tel"></td>
-         </tr>
+         </tr><td>
+         select your gender<br> 
+         <input type="radio" name="gender" id="male"> 
+         <label for="male">Male</label><br> 
+         <input type="radio" name="gender" id="female"> 
+         <label for="female">Female</label></td>
+
     <tr><td> Where are you from?</td>
    <td><select name="country" id="">
        <option value="af"> Africa</option>
@@ -55,8 +73,6 @@
 </tr>
 <tr>
   <td> what do you want to say?</td>
-  </tr>
-  <tr>
   <td> <textarea name="" id="txarea" cols="30" rows="10" name="txarea"></textarea></td>
   </tr>
   <tr>
