@@ -7,92 +7,100 @@
     <title>Eden M</title>
     <link rel="icon" sizes="114x114"
       href="./asset/images/icon.bmp" type="image/bmp">
+      <style>
+          body{
+              background-color:chocolate;
+              background-image: url(./asset/images/download.jfif);
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+      </style>
+      <link rel="stylesheet" href="./asset/css/style2.css">
 </head>
 <body>
+<header>
+    <nav>
 
-<hr>
-<a href="index.html">Home</a> |
-<a href="contact.html">Contact</a>|
-<a href="Gallery.html" target="_blank">Gallery</a>
+<a href="index - Copy.html">Home</a> |
+<a href="contact - Copy.html" >Contact</a>|
+<a href="gallery2 - Copy.html" >Gallery</a>|
+<a href="blog - Copy.html" >Blog</a>
+</nav>
+</header>
 
-<hr>
 
 
-    <table cellspacing="10">
-        <tr>
-            <td><!-- image -->
-                <img src="./asset/images/user.jpg" alt="my profile picture">
-            </td>
-            <td><h1>Eden Mesfin</h1>
-                <h3>Student, Addis Ababa University</h3>
-                <p>My name is Eden, I am a <strong> software engineering student</strong> at addis ababa University </p></td>
-        </tr>
-        <hr>
-    </table>
+    
+      
+            <!-- image -->
+            <img id="profile" src="./asset/images/user.jpg" alt="my profile picture">
+            <div id="info">
+        <h1>Eden Mesfin</h1>
+            <h3>Student, Addis Ababa University</h3>
+            <p>My name is Eden, I am a <strong> software engineering student</strong> at addis ababa University </p>
+            </div>
     
             
+        <div class="clear"></div>
         
-        
-    <table cellspacing="50"><tr><td>
-    <hr>
-   <h3>Contact us ...</h3>
+    
+   <h3 id="contact">Contact us ...</h3>
 
 <form action="mailto:se.eden.mesfin@gmail.com" enctype="utf-8" method="POST">
-   <table>
-    <tr>
-       <td><label for="fName">First Name:</label></td>
-        <td> <input type="text" name="fName" id="fName" pattern="[A-Za-z]{2,20}" title="letters only"></td>
-    </tr>
-    <tr>
-  <td><label for="sName">Last Name</label></td> 
-  <td><input type="text" name="sName" id="sName" pattern="[A-Za-z]{2,20}" title="letters only"></td>
-    </tr>
-    <tr>
-   <td><label for="eMail">Email</label></td>
-   <td><input type="email" name="eMail" id="eMail" pattern="{2,}"></td>
-    </tr>
-<tr>
-    <td><label for="pw">Password</label></td>
-    <td><input type="password" name="pw" id="pw" pattern=".{6,}" title="Six or more characters"></td></tr>
-    <tr>
-        <td><label for="tel">Phone number</label></td>
-        <td><input type="tel" id="tel" name="tel" pattern="[0-9]{2,}" title="number only"></td>
-         </tr><td>
-         select your gender<br> 
-         <input type="radio" name="gender" id="male"> 
-         <label for="male">Male</label><br> 
-         <input type="radio" name="gender" id="female"> 
-         <label for="female">Female</label></td>
+   
+    <label for="fName">First Name:</label>
+    <input type="text" name="fName" id="fName" pattern="[A-Za-z]{2,20}" title="letters only">
+    <div class="clear"></div>
+  
+    <label for="sName">Last Name</label>
+  <input type="text" name="sName" id="sName" pattern="[A-Za-z]{2,20}" title="letters only">
+  <div class="clear"></div>
+  
+  <label for="eMail">Email</label>
+   <input type="email" name="eMail" id="eMail" pattern="{2,}">
+   <div class="clear"></div>
+    
+   <label for="pw">Password</label>
+    <input type="password" name="pw" id="pw" pattern=".{6,}" title="Six or more characters">
+    <div class="clear"></div>
+   
+    <label for="tel">Phone number</label>
+    <input type="tel" id="tel" name="tel" pattern="[0-9]{2,}" title="number only">
+    <div class="clear"></div>
+   
+    
+    <label for="gender"> select your gender </label>
+    <div class="clear"></div>
+    <input type="radio" name="gender" id="male"> 
+    <label class="radio" for="male">Male</label> 
+    <div class="clear"></div>
+    <input type="radio" name="gender" id="female"> 
+    <label class="radio" for="female">Female</label>
+    <div class="clear"></div>
+    
 
-    <tr><td> Where are you from?</td>
-   <td><select name="country" id="">
-       <option value="af"> Africa</option>
-       <option value="as" >Asia</option>
-       <option value="eu"> Europe</option>
-   </select></td>
-</tr>
-<tr>
-  <td> what do you want to say?</td>
-  <td> <textarea name="" id="txarea" cols="30" rows="10" name="txarea"></textarea></td>
-  </tr>
-  <tr>
-   <td><input type="submit" value="submit"></td>
-</tr>
+     <label for="country">Where are you from?</label>
+    <select name="country" id="country">
+    <option value="af"> Africa</option>
+    <option value="as" >Asia</option>
+    <option value="eu"> Europe</option>
+   </select>
+   <div class="clear"></div>
+    
+   <label for="txarea">what do you want to say?</label> 
+    <textarea name="txarea" id="txarea" cols="30" rows="10" name="txarea"></textarea>
+    <div class="clear"></div>
+   
+    <input type="submit" value="submit" id="submit">
+    <div class="clear"></div>
 
-</table>
-</form></td>
-<td><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+</form>
+<div id="map">
+<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 </iframe>
-<a href="https://www.embedgooglemap.org"></a></td></tr>
-<style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
-</table>
-
-
-
-
-
-
-
+<a href="https://www.embedgooglemap.org"></a>
+</div>
+<div class="clear"></div>
 
 
 
