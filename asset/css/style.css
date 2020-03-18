@@ -1,19 +1,140 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-p{
-    color: aquamarine;
-    ;
-}
+/* common */
 
 body{
-    background-color: brown;
-    /* border: solid 10px lightgray; */
-    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
 }
+
+nav{
+    border-bottom: black solid 2px;
+    border-top: black solid 2px;
+}
+
+#profile{
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    float: left;
+    margin-right: 20px;
+}
+#info{
+    margin-top: 50px;
+    padding-top: 80px;
+
+}
+nav>a{
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+nav>a:hover{
+    background-color:brown;
+}
+.clear{
+    clear: left;
+}
+
+
+/* index */
+
+.subtitles{
+    display: inline-block;
+    margin: 2px 150px 10px 20px;
+}
+.sameLine>p{
+    display: inline;
+    margin: 0 110px 2px 20px;
+}
+.titles{
+    border-top: black solid 1px;
+    padding: 10px 2px 5px;
+}
+h4{
+    margin-left: 20px;
+}
+
+
+/* contact */
+
+#contact{
+    border-top: black solid 2px;
+}
+label{
+    float: left;
+    padding: 5px;
+}
+form{
+    align-content: center;
+    float: left;
+    margin: 10px 50px 20px 20px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+.radio{
+    float: none;
+}
+a{
+    text-decoration: none;
+}
+#submit{
+    width: 410px;
+    height: 30px;
+}
+#fName{
+    margin-left: 96px;
+}
+#sName{
+    margin-left: 100px;
+}
+#eMail{
+    margin-left: 134px;
+}
+#pw{
+    margin-left: 107px;
+}
+#tel{
+    margin-left: 76px;
+}
+#country{
+    margin-left: 34px;
+}
+#txarea{
+    margin-left: 3px;
+}
+
+
+/* gallery */
+
+#gallery{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: solid 5px grey;
+    width: auto;
+} 
+img{
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin: 1.66%;
+}
+
+
+/* blog */
+
 header{
-    background-color: green;
+    background-color:lightgray;
     position: fixed;
     top: 0;
     width: 100%;
@@ -39,26 +160,5 @@ font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
 }
-/* <!--changing nature --> */
-nav>ul>li{
-    display: inline-block;
-    padding: 10px 3px;
-    font-size: 20px;
-    
-}
-nav>a{
-    text-decoration: none;
-}
-nav>a:hover{
-    background-color: lightslategrey;
-}
-img{
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    float: left;
-    margin-right: 20px;
-}
-#clear{
-    clear: left;
-}
+
+
