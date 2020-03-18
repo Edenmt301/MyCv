@@ -1,4 +1,4 @@
-#title{
+#gallery{
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
@@ -6,17 +6,21 @@
     width: auto;
 }
 nav{
-    border-bottom: grey solid 2px;
-    border-top: grey solid 2px;
+    border-bottom: black solid 2px;
+    border-top: black solid 2px;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: normal;
 }
 table{
     width: 100%;
     padding-bottom: 10px;
+}
+
+.clear{
+    clear: left;
 }
 img{
     float: left;
@@ -24,25 +28,22 @@ img{
     height: 300px;
     margin: 1.66%;
 }
-.clear{
-    clear: left;
-}
 #profile{
-    width: 400px;
-    height: 400px;
+    width: 20%;
+    height: 20%;
     border-radius: 100%;
     float: left;
     margin-right: 20px;
 }
 #info{
-    border-bottom: grey solid 2px;
+    margin-top: 150px;
 }
 #contact{
-    border-top: grey solid 2px;
+    border-top: black solid 2px;
 }
 label{
     float: left;
-    padding: 2px;
+    padding: 5px;
 }
 form{
     align-content: center;
@@ -69,20 +70,20 @@ a{
     text-decoration: none;
 }
 #submit{
-    width: 430px;
+    width: 410px;
     height: 30px;
 }
 #fName{
-    margin-left: 100px;
+    margin-left: 96px;
 }
 #sName{
-    margin-left: 105px;
+    margin-left: 100px;
 }
 #eMail{
-    margin-left: 142px;
+    margin-left: 134px;
 }
 #pw{
-    margin-left: 112px;
+    margin-left: 107px;
 }
 #tel{
     margin-left: 76px;
@@ -93,7 +94,18 @@ a{
 #txarea{
     margin-left: 3px;
 }
-input{
-    
-    
+.subtitles{
+    display: inline-block;
+    margin: 2px 150px 10px 20px;
+}
+.sameLine>p{
+    display: inline;
+    margin: 0 110px 2px 20px;
+}
+.titles{
+    border-top: black solid 1px;
+    margin: 20px 2px;
+}
+h4{
+    margin-left: 20px;
 }
