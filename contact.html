@@ -9,7 +9,6 @@
       href="./asset/images/icon.bmp" type="image/bmp">
       <style>
           body{
-              background-color:chocolate;
               background-image: url(./asset/images/wall1.jpg);
               background-repeat: no-repeat;
               background-size: 100% 100%;
@@ -44,63 +43,64 @@
         
     
    <h3 id="contact">Contact us ...</h3>
-
+   <div class="contact-container">
+<div class="outer-container">
 <form action="mailto:se.eden.mesfin@gmail.com" enctype="utf-8" method="POST">
-   
-    <label for="fName">First Name:</label>
-    <input type="text" name="fName" id="fName" pattern="[A-Za-z]{2,20}" title="letters only">
-    <div class="clear"></div>
-  
-    <label for="sName">Last Name</label>
-  <input type="text" name="sName" id="sName" pattern="[A-Za-z]{2,20}" title="letters only">
-  <div class="clear"></div>
-  
-  <label for="eMail">Email</label>
-   <input type="email" name="eMail" id="eMail" pattern="{2,}">
-   <div class="clear"></div>
-    
-   <label for="pw">Password</label>
-    <input type="password" name="pw" id="pw" pattern=".{6,}" title="Six or more characters">
-    <div class="clear"></div>
-   
-    <label for="tel">Phone number</label>
-    <input type="tel" id="tel" name="tel" pattern="[0-9]{2,}" title="number only">
-    <div class="clear"></div>
-   
-    
-    <label for="gender"> select your gender </label>
-    <div class="clear"></div>
-    <input type="radio" name="gender" id="male"> 
-    <label class="radio" for="male">Male</label> 
-    <div class="clear"></div>
-    <input type="radio" name="gender" id="female"> 
-    <label class="radio" for="female">Female</label>
-    <div class="clear"></div>
-    
-
-     <label for="country">Where are you from?</label>
-    <select name="country" id="country">
-    <option value="af"> Africa</option>
-    <option value="as" >Asia</option>
-    <option value="eu"> Europe</option>
-   </select>
-   <div class="clear"></div>
-    
-   <label for="txarea">what do you want to say?</label> 
-    <textarea name="txarea" id="txarea" cols="30" rows="10" name="txarea"></textarea>
-    <div class="clear"></div>
-   
-    <input type="submit" value="submit" id="submit">
-    <div class="clear"></div>
+    <div class="inner-container">
+       <div><label for="fName">First Name:</label></div>
+        <div><input type="text" name="fName" id="fName" pattern="[A-Za-z]{2,20}" title="letters only"></div>
+    </div>
+    <div class="inner-container">
+        <div><label for="sName">Last Name</label></div>
+        <div><input type="text" name="sName" id="sName" pattern="[A-Za-z]{2,20}" title="letters only"></div>
+    </div>
+    <div class="inner-container">
+        <div><label for="eMail">Email</label></div>
+        <div><input type="email" name="eMail" id="eMail" pattern="{2,}"></div>
+    </div>
+    <div class="inner-container">
+        <div><label for="pw">Password</label></div>
+        <div><input type="password" name="pw" id="pw" pattern=".{6,}" title="Six or more characters"></div>
+    </div>
+    <div class="inner-container">
+        <div><label for="tel">Phone number</label></div>
+       <div><input type="tel" id="tel" name="tel" pattern="[0-9]{2,}" title="number only"></div>
+    </div>
+    <div>
+        <label for="gender"> select your gender </label>
+        <div class="clear"></div>
+        <input class="radio" type="radio" name="gender" id="male"> 
+        <label class="radio" for="male">Male</label> 
+        <div class="clear"></div>
+        <input class="radio" type="radio" name="gender" id="female"> 
+        <label class="radio" for="female">Female</label>
+        <div class="clear"></div>
+    </div>
+    <div class="inner-container">
+        <div><label for="country">Where are you from?</label></div>
+        <div><select name="country" id="country">
+        <option value="af"> Africa</option>
+        <option value="as" >Asia</option>
+        <option value="eu"> Europe</option>
+        </select></div>
+    </div>
+    <div class="inner-container">
+        <div><label for="txarea">what do you want to say?</label></div> 
+        <div><textarea name="txarea" id="txarea" cols="30" rows="10" name="txarea"></textarea></div>
+    </div>
+    <div>
+        <input type="submit" value="submit" id="submit">
+    </div>
 
 </form>
+</div>
 <div id="map">
 <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 </iframe>
 <a href="https://www.embedgooglemap.org"></a>
 </div>
 <div class="clear"></div>
-
+</div>
 
 
    <a href="http://www.facebook.com/" target="_blank">Facebook</a>

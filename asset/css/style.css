@@ -60,14 +60,34 @@ h4{
 #contact{
     border-top: black solid 2px;
 }
-label{
-    float: left;
-    padding: 5px;
+.contact-container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
+.outer-container{
+    display:flex;
+    flex-flow:column wrap;
+    align-content: stretch;
+}
+.inner-container{
+    
+    display:flex;
+    flex-flow: row wrap;   
+}
+.inner-container>div{
+    flex-basis: 175px;
+    margin-bottom: 3px;
+}
+
 form{
     align-content: center;
     float: left;
     margin: 10px 50px 20px 20px;
+    
+}
+input{
+    width: 228px;
 }
 .mapouter{
     position:relative;
@@ -82,35 +102,14 @@ form{
     width:600px;
 }
 .radio{
-    float: none;
+    width: unset;
 }
 a{
     text-decoration: none;
 }
 #submit{
-    width: 410px;
+    width: 408px;
     height: 30px;
-}
-#fName{
-    margin-left: 96px;
-}
-#sName{
-    margin-left: 100px;
-}
-#eMail{
-    margin-left: 134px;
-}
-#pw{
-    margin-left: 107px;
-}
-#tel{
-    margin-left: 76px;
-}
-#country{
-    margin-left: 34px;
-}
-#txarea{
-    margin-left: 3px;
 }
 
 
