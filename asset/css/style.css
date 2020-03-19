@@ -2,15 +2,29 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-style: normal;
+    color:black;
 }
-
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+    height: 30px;
+    font-size: 26px;
+    
+}
+.navigation>div>a{
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 25px;
+}
+.navigation>div>a:hover{
+    background-color:brown;
+}
 nav{
     border-bottom: black solid 2px;
     border-top: black solid 2px;
 }
-
 #profile{
     width: 20%;
     height: 20%;
@@ -23,36 +37,39 @@ nav{
     padding-top: 80px;
 
 }
-nav>a{
-    font-size: 20px;
-    text-decoration: none;
-    padding-right: 20px;
-}
-nav>a:hover{
-    background-color:brown;
-}
 .clear{
     clear: left;
 }
-
+a{
+    text-decoration: none;
+}
 
 /* index */
-
-.subtitles{
-    display: inline-block;
-    margin: 2px 150px 10px 20px;
+.index-container{
+    display: flex;
+    flex-direction: column;
 }
-.sameLine>p{
-    display: inline;
-    margin: 0 110px 2px 20px;
+.inner-index-container{
+    display: flex;
+    flex-direction: column;
+}
+.inner-row{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.inner-row>div{
+    flex-basis: 400px;
+    align-content: center;
 }
 .titles{
     border-top: black solid 1px;
-    padding: 10px 2px 5px;
+    padding: 5px 2px 5px;
 }
 h4{
-    margin-left: 20px;
+    margin: 2px 3px;
 }
+
 
 
 /* contact */
@@ -82,9 +99,7 @@ h4{
 
 form{
     align-content: center;
-    float: left;
-    margin: 10px 50px 20px 20px;
-    
+    margin: 10px 50px 20px 20px;  
 }
 input{
     width: 228px;
@@ -104,9 +119,7 @@ input{
 .radio{
     width: unset;
 }
-a{
-    text-decoration: none;
-}
+
 #submit{
     width: 408px;
     height: 30px;
