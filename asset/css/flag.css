@@ -1,0 +1,122 @@
+h1{
+    text-align: center;
+    border-bottom: black solid 2px;
+    margin-bottom: 2rem;
+}
+.flag{
+    margin: 2rem 6rem;
+    position: relative;
+    float: left;
+    
+}
+.flag>div:nth-of-type(1){
+    width: 15.05rem;
+    height: 9.1rem;
+    border: black solid 0.5px;
+}
+.vertical>div>div{
+    position: relative;
+    float: left;
+}
+.vertical>div>.green{
+    width: 5rem;
+    height: 9rem;
+    background-color:green;
+}
+.vertical>div>.yellow{
+    width: 5rem;
+    height: 9rem;
+    background-color:yellow;
+}
+.vertical>div>.red{
+    width: 5rem;
+    height: 9rem;
+    background-color:red;
+}
+.vertical>div>.blue{
+    width: 5rem;
+    height: 9rem;
+    background-color:blue; 
+}
+.vertical>div>.black{
+    width: 5rem;
+    height: 9rem;
+    background-color:black; 
+}
+.vertical>div>.lightblue{
+    width: 5rem;
+    height: 9rem;
+    background-color:lightblue; 
+}
+.vertical>div>.brown{
+    width: 5rem;
+    height: 9rem;
+    background-color:burlywood; 
+}
+.vertical>div>.white{
+    width: 5rem;
+    height: 9rem;
+}
+.horizontal>div>.green{
+    width: 15rem;
+    height: 3rem;
+    background-color:green;
+}
+.horizontal>div>.yellow{
+    width: 15rem;
+    height: 3rem;
+    background-color:yellow;
+}
+.horizontal>div>.red{
+    width: 15rem;
+    height: 3rem;
+    background-color:red;
+}
+.horizontal>div>.blue{
+    width: 15rem;
+    height: 3rem;
+    background-color:blue; 
+}
+.horizontal>div>.black{
+    width: 15rem;
+    height: 3rem;
+    background-color:black; 
+}
+.horizontal>div>.lightblue{
+    width: 15rem;
+    height: 3rem;
+    background-color:lightblue; 
+}
+.horizontal>div>.brown{
+    width: 15rem;
+    height: 3rem;
+    background-color:brown; 
+}
+.horizontal>div>.white{
+    width: 15rem;
+    height: 3rem;
+}
+
+.circle>.bgcircle>.red{
+    width: 5rem;
+    height: 5rem;
+    background-color:red;
+    border-radius: 100%;
+    margin: 2em 5em;
+}
+.bgcircle{
+    width: 15rem;
+    height: 7rem;
+}
+.r2>div>.white,.r2>div>.red, .r2>div>.blue, .r2>div>.yellow{
+    height: 4.5rem;
+}
+.r5>div>.white,.r5>div>.red{
+    height: 1.5rem;
+}
+.r5>div>.blue{
+    height: 3rem;
+}
+.clear{
+    clear: left;
+}
