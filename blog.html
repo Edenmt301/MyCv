@@ -31,16 +31,27 @@
     <div id="content">
         <!--1 post-->
 <section>
-    <p class="title">My first post</p>
+    <p class="title">Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element
+         is responsive ? </p>
     <article>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
+        <p>Yes it does matter if we use “%”, “em” or “rem”. This is because these are relative units of measurement while
+             pixel is an absolute unit of measurement. When we are trying to make a responsive web page, using pixel is a
+             bad idea because it won’t change size for different devices with different view port sizes. The relative units
+             vary for different sizes and everything is scaled up and down proportionally giving the page a more presentable 
+             look. There are some people that suggest the responsiveness can be done using media queries but using the relative 
+             units will prevent writing complex media queries and simplifies the work. You can read more about this on webFx.com.</p>
+        <p>In addition to this, using relative units makes the website adaptive to different setting changes by the user. 
+            So basically it is the choice between making a pixel exact control design or to design around changes and user 
+            control around their browsing experiences. The user needs to be able to zoom the viewport without loss of content
+            or functionality. When users want to use browser font scaling feature by only changing font size and without
+            zooming the whole page the difference is observed. If relative units are used for the font size specially rem, 
+            they are scaled up or scaled down to a multiple of the root level font. And also if the height of the container
+            is also specified using relative units the line spacing is automatically adjusted giving a pleasant result.
+            For detailed explanation and examples look at cssTricks.com </p>
+        
 
 </article>
-    <p class="date">march,12 2020</p>
+    <p class="date">march,20 2020</p>
 
 </section>
 <!--2 post-->
@@ -72,5 +83,6 @@
 
 </section>
     </div>
+    
 </body>
 </html>
