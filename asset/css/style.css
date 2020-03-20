@@ -177,13 +177,20 @@ header{
 section{
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif; 
-    padding:5px 20rem ;
+    padding:5px 10rem ;
 }  
 article{
     line-height: 25px;
     font-size: 15px;
-    text-align: justify;
-    
+    text-align: justify;  
+}
+article>p>a{
+    text-decoration: underline brown;
+    color: brown;
+}
+article>p>a:hover{
+    text-decoration: underline grey;
+    color: grey;
 }
 .title{
 font-size: 23px;
@@ -194,10 +201,35 @@ font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
 }
-#content{
-    float: left;
+.blog-container{
+    display:flex;
+    flex-direction: row;
 }
-
+#contact{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding:5px;
+    width: 15rem;
+}
+.links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.links-container>div{
+    padding:1rem 0.5rem;
+}
+#contact>div>div>a>img{
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+#contact>div:nth-of-type(1){
+    text-align: center;
+    font-weight: bold;
+}
 
 /* myworks */
 

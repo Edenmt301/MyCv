@@ -27,9 +27,10 @@
             </div>
         </nav>
     </header>
+<div class="blog-container">
 
     <div id="content">
-        <!--1 post-->
+       
 <section>
     <p class="title">Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element
          is responsive ? </p>
@@ -39,7 +40,7 @@
              bad idea because it won’t change size for different devices with different view port sizes. The relative units
              vary for different sizes and everything is scaled up and down proportionally giving the page a more presentable 
              look. There are some people that suggest the responsiveness can be done using media queries but using the relative 
-             units will prevent writing complex media queries and simplifies the work. You can read more about this on webFx.com.</p>
+             units will prevent writing complex media queries and simplifies the work. You can read more about this on <a href="https://www.webfx.com/web-design/make-website-responsive.html" target = "_blank">webFx.com</a>.</p>
         <p>In addition to this, using relative units makes the website adaptive to different setting changes by the user. 
             So basically it is the choice between making a pixel exact control design or to design around changes and user 
             control around their browsing experiences. The user needs to be able to zoom the viewport without loss of content
@@ -47,7 +48,7 @@
             zooming the whole page the difference is observed. If relative units are used for the font size specially rem, 
             they are scaled up or scaled down to a multiple of the root level font. And also if the height of the container
             is also specified using relative units the line spacing is automatically adjusted giving a pleasant result.
-            For detailed explanation and examples look at cssTricks.com </p>
+            For detailed explanation and examples look at <a href="https://css-tricks.com/building-resizeable-components-relative-css-units/" target = "_blank">cssTricks.com</a>.</p>
         
 
 </article>
@@ -56,13 +57,15 @@
 </section>
 <!--2 post-->
 <section>
-    <p class="title">My second post</p>
+    <p class="title">What is the default browser size?</p>
     <article>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
+        <p>The default root element’s size for almost all browsers is 16px if you don’t apply any CSS rules. 
+            This value is used throughout the html when we use rem and %. This means 1rem is equal with 16px 
+            and also 100% is the same. When we set the size of a text or other element using pixels like for 
+            example when we set font-size as 200p, we are preventing the text from inheriting from the root 
+            and setting new values to that specific text. We can also change the value of the default root 
+            element’s size in our CSS by setting a different value to the html. To read further about this topic
+             you can visit  <a href="https://css-tricks.com/building-resizeable-components-relative-css-units/" target = "_blank">hongkiat.com</a>.</p>
 
 </article>
     <p class="date">march,20 2020</p>
@@ -79,10 +82,19 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi labore vel dolores repudiandae doloremque maxime inventore temporibus? Veniam libero rem autem sed corrupti suscipit?</p>
 
 </article>
-    <p class="date">march,30 2020</p>
+    <p class="date">march,21 2020</p>
 
 </section>
     </div>
-    
+    <div id="contact">
+        <div>contact me</div>
+        <div class="links-container">
+        <div><a href="https://www.instagram.com/edimes100/" target = "_blank"><img src="./asset/images/insta.png" alt="" ></a></div>
+        <div><a href="https://twitter.com/edimes1" target = "_blank"><img src="./asset/images/tweet.png" alt="" ></a></div>
+        <div><a href="https://www.gmail.com" target = "_blank"><img src="./asset/images/email2.jpg" alt="" ></a></div>
+        <div><a href="https://www.facebook.com/eden.mesfin.39" target = "_blank"><img src="./asset/images/facebook5.jpg" alt=""></a></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
